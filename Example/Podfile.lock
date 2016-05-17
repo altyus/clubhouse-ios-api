@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (3.2.1)
+  - clubhouse-ios-api (0.1.0):
+    - Alamofire (~> 3.2.1)
+    - SwiftyJSON (~> 2.3.2)
+  - Nimble (3.2.0)
+  - Quick (0.9.1)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - clubhouse-ios-api (from `../`)
+  - Nimble (= 3.2.0)
+  - Quick (~> 0.9.0)
+
+EXTERNAL SOURCES:
+  clubhouse-ios-api:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  clubhouse-ios-api: 86b8ad0bb82661c7a6df00f4df7c8c802a596279
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0

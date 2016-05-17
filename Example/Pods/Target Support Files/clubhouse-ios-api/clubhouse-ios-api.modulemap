@@ -1,0 +1,6 @@
+framework module clubhouse_ios_api {
+  umbrella header "clubhouse-ios-api-umbrella.h"
+
+  export *
+  module * { export * }
+}

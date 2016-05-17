@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'clubhouse-ios-api_Example', :exclusive => true do
+  pod 'clubhouse-ios-api', :path => '../'
+end
+
+target 'clubhouse-ios-api_Tests', :exclusive => true do
+  pod 'clubhouse-ios-api', :path => '../'
+
+  pod 'Quick', '~> 0.9.0'
+  pod 'Nimble', '3.2.0'
+end
