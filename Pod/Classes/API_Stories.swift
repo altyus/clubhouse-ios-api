@@ -300,7 +300,8 @@ public extension ClubhouseAPI {
     }
     
     func createComment(storyId: Int, text: String, optionalParams:[CommentParam], success: (Comment) -> Void, failure: Failure) {
-        var params = optionalParams + [CommentParam.Text(text)]
+        // Combines Optional Params with Required Param, Description
+        let params = optionalParams + [CommentParam.Text(text)]
         request(StoryRouter.CreateComment(storyId: storyId, params: params.toParams()), success: { response in
             guard let response = response as? [String: AnyObject] else {
                 failure(nil)
@@ -326,7 +327,7 @@ public extension ClubhouseAPI {
     
     func createTask(storyId: Int, description: String, optionalParams:[TaskParam],  complete: Bool, success: (Task) -> Void, failure: Failure) {
         // Combines Optional Params with Required Param, Description
-        var params = optionalParams + [TaskParam.Description(description)]
+        let params = optionalParams + [TaskParam.Description(description)]
         request(StoryRouter.CreateTask(storyId: storyId, params: params.toParams()), success: { response in
             guard let response = response as? [String: AnyObject] else {
                 failure(nil)
