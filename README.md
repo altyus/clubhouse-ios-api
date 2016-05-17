@@ -41,6 +41,17 @@ it, simply add the following line to your Podfile:
 pod "clubhouse-ios-api"
 ```
 
+## Usage
+
+```Swift
+ClubhouseAPI.sharedInstance.searchStories([StoryParam.EpicId(123)], success: { stories in
+            self.stories = stories.sort { $0.name?.lowercaseString < $1.name?.lowercaseString }
+            self.tableView.reloadData()
+            }, failure: { error in
+                print(error)
+        })
+```
+
 ## License
 
 clubhouse-ios-api is available under the MIT license. See the LICENSE file for more info.
